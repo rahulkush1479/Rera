@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <!-- <link rel="stylesheet" href="css/output.css"> -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  
+  <body>
+    <button onclick="topFunction()" id="topbtn" class="ring-1 ring-white" title="Go to top"><img src="images/arrow-up.svg" alt=""></button>
+    <header id="header" class="w-full h-20 flex  first py-1 justify-center" >
+      <div class="container mx-auto lg:w-[90%] py-2 grid lg:grid-cols-6 grid-cols-4 items-center align-middle" >
+        <div class="lg:col-span-1 col-span-2 md:w-[170px] w-[130px] mx-3 lg:mx-0">
+          <img  src="images/WhatsApp Image 2024-12-20 at 14.00.21_3d34abbe.jpg"  class="p-1 rounded-md bg-white"width="100%"alt="" />
+        </div>
+
+        <div class="col-span-2 lg:hidden flex justify-end">
+          <input type="checkbox" id="checkbox" />
+          <label onclick="tognav()" for="checkbox" class="toggle mx-3">
+            <div class="bars" id="bar1"></div>
+            <div class="bars" id="bar2"></div>
+            <div class="bars" id="bar3"></div>
+          </label>
+        </div>
+        <div  class="col-span-5 bg-[#100f0f] lg:bg-transparent lg:p-4 hidenav z-40 lg:z-30" >
+          <div class="flex justify-end lg:hidden">
+            <input type="checkbox" id="checkbox" />
+            <label onclick="tognav()" for="checkbox" class="toggle mx-3">
+              <div class="bars" id="bar1"></div>
+              <div class="bars" id="bar2"></div>
+              <div class="bars" id="bar3"></div>
+            </label>
+          </div>
+          <ul  class="lg:flex w-full bg-white/30 lg:bg-transparent justify-end gap-8 p-4 mt-5 lg:p-0 rounded-md lg:m-0" >
+            <li class="relative text-lg text-white hover:text-[#c69214] transition duration-300 cursor-pointer"> Agent Registration </li>
+
+            <li class="relative group text-lg text-white hover:text-[#c69214] transition duration-300 cursor-pointer"> Our services
+              <div class="absolute left-0 mt-2 bg-white text-gray-800 w-48 rounded-md shadow-lg h-0 overflow-hidden group-hover:h-[150px] transition-all duration-500 z-20" >
+                <ul  class="p-4 space-y-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"   >
+                  <li  class="hover:text-[#c69214] font-medium cursor-pointer transition flex items-center gap-2" > Agent</li>
+                  <li class="hover:text-[#c69214] font-medium cursor-pointer transition flex items-center gap-2" > Consultancy </li>
+                  <li class="hover:text-[#c69214] font-medium cursor-pointer transition flex items-center gap-2" >Trainings</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="relative text-lg text-white hover:text-[#c69214] transition duration-300 cursor-pointer" >Contact us</li>
+          </ul>
+
+        </div>
+      </div>
+    </header>
+
+    <section class="container mx-auto lg:w-[90%] mt-1 rounded-sm">
+      <div class="px-2 sm:px-5 lg:px-0">
+        <div class="relative">
+          <div class="owl-carousel mainbanner md:rounded-lg rounded-2xl overflow-hidden">
+            <div class="item z-0 md:h-[550px] h-[300px]">
+              <img
+                src="images/allahabad-high-court-lawyer.jpg"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div class="item   md:h-[550px] h-[300px]">
+              <img
+                src="images/slider-new-1.jpg"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+          <div class="hidden md:block z-0 ">
+            <button class="banbtn prev-btn z-10">←</button>
+            <button class="banbtn next-btn z-10">→</button>
+          </div>
+          <div
+            class="custom-dots absolute bottom-[30px] left-1/2 transform -translate-x-1/2 z-20 mt-4 hidden lg:block"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-8 px-4 bg-gray-50">
+      <div class="max-w-7xl mx-auto text-center">
+        <div class="p-6 ">
+          <h2 class="text-3xl font-serif font-semibold text-center text-gray-800">
+            Our Legal Services
+          </h2>
+        </div>
+    
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+  
+
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
+            <img src="images/th_event_1584524119.jpg" alt="Civil Laws" class="w-full h-56 object-cover">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold text-[#002f6c]">Civil Laws</h3>
+              <p class="text-gray-700 mt-4">
+                We provide comprehensive legal services to our clients under litigation of civil laws including money recovery, recovery disputes, suits related to children, wards, guardianships, estate, property, custody, execution, claims...
+              </p>
+              <a href="#" class="text-[#002f6c] mt-4 inline-block hover:underline">Read More</a>
+            </div>
+          </div>
+        
+    
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
+            <img src="images/th_event_17466671060.jpg" alt="Criminal Laws" class="w-full h-56 object-cover">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold text-[#002f6c]">Criminal Laws</h3>
+              <p class="text-gray-700 mt-4">
+                We have been successfully handling various types of criminal matters for our individual clients as well as corporate clients, especially in criminal misappropriation of funds, criminal breach...
+              </p>
+              <a href="#" class="text-[#002f6c] mt-4 inline-block hover:underline">Read More</a>
+            </div>
+          </div>
+        
+
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
+            <img src="images/th_event_1584524119.jpg" alt="Family Laws" class="w-full h-56 object-cover">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold text-[#002f6c]">Family Laws</h3>
+              <p class="text-gray-700 mt-4">
+                When matrimonial disputes arise between parties to marriage, it brings numerous litigations with it. It includes civil as well as criminal litigation and involves family laws, matrimonial laws, and criminal law...
+              </p>
+              <a href="#" class="text-[#002f6c] mt-4 inline-block hover:underline">Read More</a>
+            </div>
+          </div>
+        
+    
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
+            <img src="images/th_event_17466671060.jpg" alt="Consumer Laws" class="w-full h-56 object-cover">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold text-[#002f6c]">Consumer Laws</h3>
+              <p class="text-gray-700 mt-4">
+                We provide comprehensive legal services covering the entire area of operation for companies, including Company Formation, Corporate Approvals, Secretarial Compliances, Joint Ventures, and more...
+              </p>
+              <a href="#" class="text-[#002f6c] mt-4 inline-block hover:underline">Read More</a>
+            </div>
+          </div>
+        
+      
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
+            <img src="images/th_event_1584524119.jpg" alt="Corporate Laws" class="w-full h-56 object-cover">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold text-[#002f6c]">Corporate Laws</h3>
+              <p class="text-gray-700 mt-4">
+                We provide comprehensive legal services covering the entire area of operation for companies, including Company Formation, Corporate Approvals, Secretarial Compliances, Joint Ventures, and more...
+              </p>
+              <a href="#" class="text-[#002f6c] mt-4 inline-block hover:underline">Read More</a>
+            </div>
+          </div>
+        
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
+            <img src="images/th_event_17466671060.jpg" alt="Cyber Laws" class="w-full h-56 object-cover">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold text-[#002f6c]">Cyber Laws</h3>
+              <p class="text-gray-700 mt-4">
+                We provide comprehensive legal services to protect our clients from cyber crimes, including hacking, phishing, and other modes of cyber threats.
+              </p>
+              <a href="#" class="text-[#002f6c] mt-4 inline-block hover:underline">Read More</a>
+            </div>
+          </div>
+        
+        </div>
+        
+        
+    
+        <div class="mt-8  pt-4">
+          <a href="#" class="text-[#002f6c] font-semibold  border-2 border-[#002f6c] hover:bg-[#002f6c] hover:text-white rounded-xl py-2 px-4 inline-block">
+            View All Services
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mx-auto md:w-[90%] lg:w-[80%] lg:ring-1 lg:ring-black/30 rounded-md overflow-hidden">
+      <div class="p-6 ">
+        <h2 class="text-3xl font-serif font-semibold text-center text-gray-800">
+          All Services at a Glance
+        </h2>
+      </div>
+      <div class="bg-white px-4 lg:px-14 shadow-sm">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 bg-gray-50 gap-2 py-3">
+          <button
+            class="tab-btn py-2 text-sm sm:text-base w-full border rounded-md focus:text-white text-center hover:bg-gray-300 focus:bg-[#002f6c] active:bg-[#002f6c] focus:outline-none font-medium"
+            data-section="section1"
+          >
+            Agent Registration
+          </button>
+          <button
+            class="tab-btn py-2 text-sm sm:text-base w-full border rounded-md focus:text-white text-center hover:bg-gray-300 focus:bg-[#002f6c] active:bg-[#002f6c] focus:outline-none font-medium"
+            data-section="section2"
+          >
+            Project Registration
+          </button>
+          <button
+            class="tab-btn py-2 text-sm sm:text-base w-full border rounded-md focus:text-white text-center hover:bg-gray-300 focus:bg-[#002f6c] active:bg-[#002f6c] focus:outline-none font-medium"
+            data-section="section3"
+          >
+            Legal Documentation
+          </button>
+          <button
+            class="tab-btn py-2 text-sm sm:text-base w-full border rounded-md focus:text-white text-center hover:bg-gray-300 focus:bg-[#002f6c] active:bg-[#002f6c] focus:outline-none font-medium"
+            data-section="section4"
+          >
+            Consultancy
+          </button>
+          <button
+            class="tab-btn py-2 text-sm sm:text-base w-full border rounded-md focus:text-white text-center hover:bg-gray-300 focus:bg-[#002f6c] active:bg-[#002f6c] focus:outline-none font-medium"
+            data-section="section5"
+          >
+            Trainings
+          </button>
+        </div>
+      
+        <div class="tab-content flex-grow mt-4">
+          <div id="section1" class="tab-section hidden text-lg">
+            <div class="container mx-auto p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div class="bg-white p-6 flex flex-col justify-between rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Individual Registration</h3>
+                <p class="text-gray-600 mb-4">RERA mandates registration of all Real Estate Agents. Get yourself registered with RERA Authorities in just three working days.</p>
+                <div>
+                  <div class="flex items-center mb-4">
+                    <span class="text-2xl font-bold text-[#002f6c]">Starts with</span>
+                    <span class="text-4xl font-semibold text-[#002f6c] ml-2">₹3000</span>
+                  </div>
+                  <a href="#" class="bg-[#002f6c] text-white py-2 mb-2 px-6 rounded-lg text-lg font-semibold text-center block hover:bg-[#c69214] transition duration-300">
+                    Know More
+                  </a>
+                </div>
+              </div>
+              <div class="bg-white p-6 flex flex-col justify-between rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Other than Individual</h3>
+                <p class="text-gray-600 mb-4">RERA mandates registration of all Real Estate Agents. Get yourself registered with RERA Authorities in just three working days.</p>
+                <div>
+                  <div class="flex items-center mb-4">
+                    <span class="text-2xl font-bold text-[#002f6c]">Starts with</span>
+                    <span class="text-4xl font-semibold text-[#002f6c] ml-2">₹5000</span>
+                  </div>
+                  <a href="#" class="bg-[#002f6c] text-white py-2 mb-2 px-6 rounded-lg text-lg font-semibold text-center block hover:bg-[#c69214] transition duration-300">
+                    Know More
+                  </a>
+                </div>
+              </div>
+              <div class="bg-white p-6 flex flex-col justify-between rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Agent Registration with Consultancy</h3>
+                <p class="text-gray-600 mb-4">Not only Registration, get all the consultancy related to marketing and other provisions as per RERA.</p>
+                <div>
+                  <div class="flex items-center mb-4">
+                    <span class="text-2xl font-bold text-[#002f6c]">Starts with</span>
+                    <span class="text-4xl font-semibold text-[#002f6c] ml-2">₹7500</span>
+                  </div>
+                  <a href="#" class="bg-[#002f6c] text-white py-2 mb-2 px-6 rounded-lg text-lg font-semibold text-center block hover:bg-[#c69214] transition duration-300">
+                    Know More
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="section2" class="tab-section hidden text-lg">
+            Content for Section 2
+          </div>
+          <div id="section3" class="tab-section hidden text-lg">
+            Content for Section 3
+          </div>
+          <div id="section4" class="tab-section hidden text-lg">
+            Content for Section 4
+          </div>
+          <div id="section5" class="tab-section hidden text-lg">
+            Content for Section 5
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <section class="conatiner mx-auto w-[90%] mt-5 py-5">
+      <div class="p-6 border-gray-200">
+        <h2 class="text-3xl font-serif font-semibold text-center text-gray-800">
+          Happy Customers
+        </h2>
+      </div>
+
+      <div class="owl-carousel blogsec py-10">
+        <div class="item mx-2">
+          <div
+            class="p-6 bg-gray-100 border-l-8 border-[#002f6c] rounded-2xl "
+          >
+            <div class="flex items-center mb-2">
+              <div
+                class="w-20 h-20 rounded-full bg-[#c69214] flex justify-center items-center text-white font-bold text-xl mr-4"
+              >
+                JS
+              </div>
+              <div>
+                <div>
+                  <p class="text-lg font-semibold text-[#002f6c]">j shaikh</p>
+                  <p class="text-sm text-gray-600">pune</p>
+                </div>
+                <div class="flex text-yellow-500 mb-4">
+                  <span class="text-xl">★</span>
+                  <span class="text-xl">★</span>
+                  <span class="text-xl">★</span>
+                  <span class="text-xl">★</span>
+                  <span class="text-xl">☆</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="text-base text-gray-700 italic mb-4">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              nec odio. Praesent libero. Sed cursus ante dapibus diam."
+            </p>
+            <a
+              href="#"
+              class="mt-4 inline-block text-[#c69214] font-semibold relative group"
+            >
+              Read More
+              <span
+                class="absolute bottom-0 left-0 h-[2px] w-0 bg-[#c69214] transition-all duration-100 ease-in-out group-hover:w-full"
+              ></span>
+            </a>
+          </div>
+        </div>
+        <div class="item mx-2">
+          <div
+            class="p-6 bg-gray-100 border-l-8 border-[#002f6c] rounded-2xl "
+          >
+            <div class="flex items-center mb-2">
+              <div
+                class="w-20 h-20 rounded-full bg-[#c69214] flex justify-center items-center text-white font-bold text-xl mr-4"
+              >
+                UD
+              </div>
+              <div>
+                <div>
+                  <p class="text-lg font-semibold text-[#002f6c]">
+                    Umesh Doshi
+                  </p>
+                  <p class="text-sm text-gray-600">Mumbai</p>
+                </div>
+                <div class="flex text-yellow-500 mb-4">
+                  <span class="text-xl">★</span>
+                  <span class="text-xl">★</span>
+                  <span class="text-xl">★</span>
+                  <span class="text-xl">★</span>
+                  <span class="text-xl">☆</span>
+                </div>
+              </div>
+            </div>
+            <p class="text-base text-gray-700 italic mb-4">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              nec odio. Praesent libero. Sed cursus ante dapibus diam."
+            </p>
+            <a
+              href="#"
+              class="mt-4 inline-block text-[#c69214] font-semibold relative group"
+            >
+              Read More
+              <span
+                class="absolute bottom-0 left-0 h-[2px] w-0 bg-[#c69214] transition-all duration-100 ease-in-out group-hover:w-full"
+              ></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class=" px-6 ">
+      <div class="max-w-7xl mx-auto text-center">
+        <div class="p-6 ">
+          <h2 class="text-3xl font-serif font-semibold text-center text-gray-800">
+            Important Links
+          </h2>
+        </div>
+        
+          <div class="bg-white hover:shadow-lg ring-1 ring-black/30 rounded-md p-6 flex items-center space-x-4 transition-transform transform hover:scale-105 duration-300 ease-in-out">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-[#002f6c]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+            </svg>
+            <a href="#" class="text-lg font-medium text-gray-800 hover:text-[#c69214]">Agent Registration</a>
+          </div>
+        
+          <div class="bg-white hover:shadow-lg ring-1 ring-black/30 rounded-md p-6 flex items-center space-x-4 transition-transform transform hover:scale-105 duration-300 ease-in-out">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-[#002f6c]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-3-3v6m8-10H5a2 2 0 00-2 2v10a2 2 0 002 2h14a2 2 0 002-2V7a2 2 0 00-2-2z" />
+            </svg>
+            <a href="#" class="text-lg font-medium text-gray-800 hover:text-[#c69214]">Project Registration</a>
+          </div>
+        
+          <div class="bg-white hover:shadow-lg ring-1 ring-black/30 rounded-md p-6 flex items-center space-x-4 transition-transform transform hover:scale-105 duration-300 ease-in-out">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-[#002f6c]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+            <a href="#" class="text-lg font-medium text-gray-800 hover:text-[#c69214]">RERA in State</a>
+          </div>
+        
+          <div class="bg-white hover:shadow-lg ring-1 ring-black/30 rounded-md p-6 flex items-center space-x-4 transition-transform transform hover:scale-105 duration-300 ease-in-out">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-[#002f6c]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2a4 4 0 014-4h3m0 0l-3-3m3 3l-3 3" />
+            </svg>
+            <a href="#" class="text-lg font-medium text-gray-800 hover:text-[#c69214]">RERA Filing Events</a>
+          </div>
+        
+          <div class="bg-white hover:shadow-lg ring-1 ring-black/30 rounded-md p-6 flex items-center space-x-4 transition-transform transform hover:scale-105 duration-300 ease-in-out">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-[#002f6c]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12h3m-6-6h3m-6 12h3M4 6h16M4 18h16" />
+            </svg>
+            <a href="#" class="text-lg font-medium text-gray-800 hover:text-[#c69214]">RERA Infographic</a>
+          </div>
+        
+          <div class="bg-white hover:shadow-lg ring-1 ring-black/30 rounded-md p-6 flex items-center space-x-4 transition-transform transform hover:scale-105 duration-300 ease-in-out">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-[#002f6c]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M11 17l-5-5m0 0l5-5m-5 5h12" />
+            </svg>
+            <a href="#" class="text-lg font-medium text-gray-800 hover:text-[#c69214]">RERA Quiz</a>
+          </div>
+        
+          <div class="bg-white hover:shadow-lg ring-1 ring-black/30 rounded-md p-6 flex items-center space-x-4 transition-transform transform hover:scale-105 duration-300 ease-in-out">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-[#002f6c]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+            <a href="#" class="text-lg font-medium text-gray-800 hover:text-[#c69214]">RERA News</a>
+          </div>
+        
+          <div class="bg-white hover:shadow-lg ring-1 ring-black/30 rounded-md p-6 flex items-center space-x-4 transition-transform transform hover:scale-105 duration-300 ease-in-out">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-[#002f6c]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3zm0 8c-4.418 0-8-1.791-8-4v6c0 2.209 3.582 4 8 4s8-1.791 8-4v-6c0 2.209-3.582 4-8 4z" />
+            </svg>
+            <a href="#" class="text-lg font-medium text-gray-800 hover:text-[#c69214]">RERA Fees Calculator</a>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    
+    <section class="pt-10">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="p-6 ">
+          <h2 class="text-3xl font-serif font-semibold text-center text-gray-800">
+            Our Events
+          </h2>
+        </div>
+        <div class="text-center mb-12">
+          <p class="text-lg text-gray-600 mt-4">We conduct Real Estate and RERA Seminars across the country. RERA Filing has successfully given training in 40 different cities to around 2500 builders and 2000 real estate agents. We are passionate about enabling our clients to achieve their business objectives. Our methodologies and training programs are based on practical experience of the real estate industry.</p>
+        </div>
+    
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="images/th_event_1584524119.jpg" alt="How to make more money in Real Estate?" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900">How to make more money in Real Estate?</h3>
+              <p class="text-sm text-gray-500 mt-2">Hotel Four Point by Sheraton, Pune</p>
+              <p class="text-sm text-gray-500 mt-1">07 Jun 2017 | 02:00</p>
+            </div>
+          </div>
+    
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="images/th_event_17466671060.jpg" alt="Training on RERA in Telangana for Vasavi Business Forum and Credai" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900">Training on RERA in Telangana for Vasavi Business Forum and Credai</h3>
+              <p class="text-sm text-gray-500 mt-2">Hotel Vaisnoi, Hyderabad, Telangana</p>
+              <p class="text-sm text-gray-500 mt-1">12 Sep 2018 | 07:00</p>
+            </div>
+          </div>
+    
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="images/th_event_1584524119.jpg" alt="Workshop- Champions of Real Estate" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900">Workshop- Champions of Real Estate</h3>
+              <p class="text-sm text-gray-500 mt-2">Hotel Taj, MG Road, Bangalore, Karnataka</p>
+              <p class="text-sm text-gray-500 mt-1">26 Oct 2018 | 11:00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 text-center pt-4">
+          <a href="#" class="text-[#002f6c] font-semibold  border-2 border-[#002f6c] hover:bg-[#002f6c] hover:text-white rounded-xl py-2 px-4 inline-block">
+            View All Event's
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <section class="py-16 px-8 ">
+      <div class="max-w-7xl mx-auto text-center">
+        <div class="p-6 ">
+          <h2 class="text-3xl font-serif font-semibold text-center text-gray-800">
+            Our Portfolio
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          
+
+          <div class="bg-white  hover:shadow-lg  ring-1 ring-black/30 rounded-md p-6 transition-all duration-300">
+            <p class="text-4xl font-bold text-[#002f6c]" id="projects">0</p>
+            <p class="text-md text-gray-600 mt-2">Project Registration</p>
+          </div>
+   
+          <div class="bg-white  hover:shadow-lg  ring-1 ring-black/30 rounded-md p-6 transition-all duration-300">
+            <p class="text-4xl font-bold text-[#002f6c]" id="units">0</p>
+            <p class="text-md text-gray-600 mt-2">Units Registered</p>
+          </div>
+    
+          <div class="bg-white  hover:shadow-lg  ring-1 ring-black/30 rounded-md p-6 transition-all duration-300">
+            <p class="text-4xl font-bold text-[#002f6c]" id="area">0</p>
+            <p class="text-md text-gray-600 mt-2">Area Registered (sq ft)</p>
+          </div>
+
+          <div class="bg-white  hover:shadow-lg  ring-1 ring-black/30 rounded-md p-6 transition-all duration-300">
+            <p class="text-4xl font-bold text-[#002f6c]" id="cities">0</p>
+            <p class="text-md text-gray-600 mt-2">Cities Covered</p>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+    
+    <section class="bg-black/90 text-white py-8 px-6 text-center">
+  <div class="container mx-auto lg:w-[90%] flex flex-col md:flex-row justify-between items-center">
+    <div class="mb-6 md:mb-0">
+      <h2 class="text-4xl font-bold text-[#F1C40F]">
+        Got Questions on RERA?
+      </h2>
+      <p class="text-lg text-gray-300 mt-3">
+        Reach out to us and get expert answers. Our team is ready to assist you with any queries you may have.
+      </p>
+    </div>
+    <div>
+      <a
+        href="mailto:your-email@example.com"
+        class="bg-[#F1C40F] text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-[#D4AC0D] transition duration-300 ease-in-out"
+      >
+        Contact Us Now
+      </a>
+    </div>
+  </div>
+    </section> 
+
+    <footer class="bg-[#002f6c] text-white pt-12">
+      <div class="container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="w-full sm:w-[90%] p-6 rounded-lg shadow-md hover:shadow-xl mx-auto">
+          <h3 class="text-xl font-semibold mb-4 text-gray-100">Area of Practice</h3>
+          <ul class=" lg:text-md footli text-gray-200 space-y-2">
+            <li>Civil Law Practice</li>
+            <li>Criminal Law Practice</li>
+            <li>Family & Divorce Law</li>
+            <li>Consumer & Competition Laws</li>
+            <li>Corporate Law Practice</li>
+            <li>Cyber Laws & Pornography</li>
+            <li>Banking & Insurance Laws</li>
+            <li>Trademark & Copyright Laws</li>
+            <li>Supreme Court Practice</li>
+            <li>Real Estate & Infrastructure Laws</li>
+            <li>Labour & Industrial Laws</li>
+            <li>Arbitration & Conciliation</li>
+            <li>Service Laws & CAT practice</li>
+            <li>NCLT & NCLAT Practice</li>
+            <li>DRT & DRAT Practice</li>
+          </ul>
+        </div>
+        <div class="w-full sm:w-[90%] p-6 rounded-lg shadow-md hover:shadow-xl mx-auto">
+          <h3 class="text-xl font-semibold mb-4 text-gray-100">Consultancy Services</h3>
+          <ul class=" lg:text-md footli text-gray-200 space-y-2">
+            <li>Corporate Law Consultancy</li>
+            <li>Commercial Contracts & Agreements</li>
+            <li>Registration of Company</li>
+            <li>Bankruptcy & Insolvency</li>
+            <li>Alternate Dispute Resolutions</li>
+            <li>Trade Mark Registration</li>
+          </ul>
+        </div>
+        <div class="w-full sm:w-[90%] p-6 rounded-lg shadow-md hover:shadow-xl mx-auto">
+          <h3 class="text-xl font-semibold mb-4 text-gray-100">Our Expertise</h3>
+          <ul class=" lg:text-md footli text-gray-200 space-y-2">
+            <li>Divorce Lawyer in Delhi</li>
+            <li>Criminal Lawyer in Delhi</li>
+            <li>Civil/Property Lawyer in Delhi</li>
+            <li>Corporate Lawyer in Delhi</li>
+            <li>Supreme Court Lawyer in Delhi</li>
+            <li>NCLT Lawyer in Delhi</li>
+            <li>DRT Lawyer in Delhi</li>
+            <li>Arbitration Lawyer in Delhi</li>
+            <li>Insolvency Lawyer in Delhi</li>
+            <li>NDPS/NCB Lawyer in Delhi</li>
+            <li>Anti-Corruption Lawyer in Delhi</li>
+            <li>Commercial Court Lawyer in Delhi</li>
+          </ul>
+        </div>
+    
+        <div class="w-full sm:w-[90%] p-6 rounded-lg shadow-md hover:shadow-xl mx-auto">
+          <h3 class="text-xl font-semibold mb-4 text-gray-100">Criminal Law Practice</h3>
+          <ul class="lg:text-md footli text-gray-200 space-y-2">
+            <li>CBI Cases Lawyer</li>
+            <li>Money Laundering PMLA Lawyer</li>
+            <li>Sexual Harassment & Rape Cases Lawyer</li>
+            <li>Economic Offence Lawyer</li>
+            <li>ED Case Lawyer</li>
+            <li>SFIO Case Lawyer</li>
+            <li>Cyber Crime Lawyer</li>
+            <li>LOC Cancellation Lawyer</li>
+            <li>MACOCA Lawyer</li>
+            <li>UAPA Case Lawyer</li>
+            <li>NIA Case Lawyer</li>
+            <li>Cheque Bouncing Lawyer</li>
+            <li>Bail Lawyer</li>
+            <li>NDPS/NCB Case Lawyer</li>
+          </ul>
+        </div>
+      </div>
+    
+      <!-- Footer Bottom -->
+      <div class="mt-12 border-t border-gray-700 py-4 text-center text-gray-500">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+      </div>
+    </footer>
+  
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
