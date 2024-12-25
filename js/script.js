@@ -54,21 +54,28 @@ const sections = document.querySelectorAll('.tab-section');
 
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
+     
+        buttons.forEach((btn) => {
+            btn.classList.remove('bg-[#002f6c]', 'text-white', 'font-bold');
+            btn.classList.add('bg-gray-200', 'text-black');
+        });
 
-        buttons.forEach((btn) => btn.classList.remove('bg-[#002f6c]', 'bg-gray-200', 'font-bold'));
+
         sections.forEach((section) => section.classList.add('hidden'));
 
-        buttons.forEach((btn) => btn.classList.add('bg-gray-200'));
 
-        button.classList.add('bg-[#002f6c]', 'font-bold');
-        button.classList.remove('bg-gray-200');
+        button.classList.add('bg-[#002f6c]', 'text-white', 'font-bold');
+        button.classList.remove('bg-gray-200', 'text-black');
+
         const sectionId = button.getAttribute('data-section');
         document.getElementById(sectionId).classList.remove('hidden');
     });
 });
 
-buttons[0].classList.add('bg-[#002f6c]', 'font-bold');
+buttons[0].classList.add('bg-[#002f6c]', 'text-white', 'font-bold');
+buttons[0].classList.remove('bg-gray-200', 'text-black');
 sections[0].classList.remove('hidden');
+
 
 function animateCount(elementId, start, end, duration) {
     const element = document.getElementById(elementId);

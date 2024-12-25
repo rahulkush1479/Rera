@@ -1,3 +1,19 @@
+.font-serif-pro {
+  font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
+}
+
+.font-sans-modern {
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.font-elegant {
+  font-family: 'Playfair Display', 'Georgia', serif;
+}
+
+.font-mono {
+  font-family: 'Source Code Pro', 'Courier New', monospace;
+}
+
 .banbtn {
   position: absolute;
   top: 50%;
